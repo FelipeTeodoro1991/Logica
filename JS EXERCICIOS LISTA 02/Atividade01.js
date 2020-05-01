@@ -4,10 +4,10 @@
 // b. N moedas de 50 centavos;
 // c. N moedas de 25 centavos;
 // d. N moedas de 10 centavos;
-// e. N moedas de 5 centavos;
-// f. N moedas de 1 centavos.
-// O programa deverá verificar se o total de reais que contém no cofrinho é o
-// bastante para compra o produto X e imprimir se possui ou não valor suficiente
+// // e. N moedas de 5 centavos;
+// // f. N moedas de 1 centavos.
+// // O programa deverá verificar se o total de reais que contém no cofrinho é o
+// // bastante para compra o produto X e imprimir se possui ou não valor suficiente
 
 var pd = require("readline-sync")
 var produto = pd.questionInt("Qua o valor do produto 'X'? ")
@@ -28,3 +28,4 @@ if (saldo_compra <= 0 ){
 
 else{ console.log("o saldo no cofrinho é de R$" +cofre+ "é o bastante para compra o produto")
 }
+
