@@ -14,7 +14,7 @@ function tabuada(n){
         var calculatabuada = i*numero
     console.log(`${numero}x${i}=${calculatabuada}`)
     }
-
+s
 }
 
 var numero = 5;
