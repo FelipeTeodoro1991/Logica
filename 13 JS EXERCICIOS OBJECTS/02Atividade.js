@@ -14,7 +14,8 @@ carro.cor = cor //istancia cor como propriedade do carro
 carro.modelo = modelo //istancia modelo como propriedade do carro
 carro.marca = marca //istancia marca como propriedade do carro  
 
-var arquivoCarro = 'carro.json'
-var objetoSerializado = JSON.stringify(carro)
+var arquivoCarro = 'carro.json' //informa o caminho da pasta
+var objetoSerializado = JSON.stringify(carro) // serializa o arquivo
 
-fs.writeFileSync(arquivoCarro,objetoSerializado)
+fs.writeFileSync(arquivoCarro,objetoSerializado)// parametro 1 informa a pasta destino, parametro 2 informa o arquivo a ser enviado
+

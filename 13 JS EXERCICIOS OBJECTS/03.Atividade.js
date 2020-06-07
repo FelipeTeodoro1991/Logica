@@ -14,6 +14,7 @@ arquivoDeserializado.push(JSON.parse(arquivoSerializado));
 
 console.log(arquivoDeserializado);
 
+
 var cor = rs.question('Informe a cor do carro: ')  // Coleta a informação com o usuario e guarda  cor na variavel 
 var modelo = rs.question('Informe o modelo do carro: ') // Coleta a informação com o usuario e guarda  cor na variavel
 var marca = rs.question('Informe a marca do carro: ') // Coleta a informação com o usuario e guarda  cor na variavel
