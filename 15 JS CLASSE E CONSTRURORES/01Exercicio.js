@@ -23,7 +23,7 @@ console.log('Cadastre o primeiro carro: ');
 var marca1 = rs.question('Digite o marca do carro: ')
 var modelo1 = rs.question('Digite o modelo do carro: ')
 var cor1 = rs.question('Digite o cor do carro: ')
-var carro1 = new Carro(marca1, modelo1, cor1)
+var carro1 = new Car(marca1, modelo1, cor1)
 
 console.log('Cadastre o segundo carro: ');
 var marca2 = rs.question('Digite o marca do carro: ')
