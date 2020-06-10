@@ -5,49 +5,32 @@ let car = require('./carro');
 let carro = car.Carro
 // cadastraCarro(rs)
 let carro1 = new carro()
-carro1.marca = rs.question('Digite o modelo do veiculo: ')
-carro1.modelo = rs.question('Digite a cor do veiculo: ')
+carro1.marcar = ""
+carro1.modelo = rs.question('Digite o modelo do veiculo: ')
+carro1.cor = rs.question('Digite a cor do veiculo: ')
 carro1.velocidade = 0
 
 let cars = false
 
-numero = 0 
-d = car.acelerar(numero,10)
 
-car.acelerar(numero)
-car.acelerar(numero)
-car.acelerar(numero)
-car.acelerar(numero)
-car.acelerar(numero)
-
-
-console.log(d);
-
-
-while(true){
-    car.acelerar(carro1.acelerar,10)
-    car.acelerar(carro1.acelerar,10)
-    car.acelerar(carro1.acelerar,10)
-    break
-}
-console.log(carro1.velocidade);
-
-
-
-// while(cars == false){
-//     let opcoes = rs.question('digite "A" para acelerar "F" para frear e "D" para desligar: ').toUpperCase()
-//     if(opcoes == "A"){
-//        car.acelerar()
-//     }
-//     if(opcoes == "F"){
-//        frear(carro1.velocidade)
-//     }
-//     if(opcoes == "D"){
-//        desligar(carro1.velocidade)
-//     }
-//     console.log(`Sua velocidade atual é de ${carro1.velocidade}km`);
-// }
+while (cars == false) {
+    let opcoes = rs.question('digite "A" para acelerar "F" para frear e "D" para desligar: ').toUpperCase()
+    if (opcoes == "A") {
+        carro1.velocidade = car.acelerar(carro1.velocidade)
+    }
+    if (opcoes == "F") {
+        carro1.velocidade = car.frear(carro1.velocidade)
+    }
+    if (opcoes == "D") {
+        if (carro1.velocidade == 0) {
+            cars = car.desligar(carro1.velocidade)
+        } 
+        else { console.log('O veiculo não pode ser desligado pois está em movimentos') }
+    }
+        console.log(`Sua velocidade atual é de ${carro1.velocidade}km`);
     
+    }
+console.log(`Seu veiculo foi desligado`);
 
 
 // // a. Acelerar
