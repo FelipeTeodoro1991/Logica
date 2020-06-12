@@ -6,6 +6,10 @@ var fs = require('fs');
 var caminhoDoArquivo = fs.readFileSync('cars.json');
 var carsDeserializado = JSON.parse(caminhoDoArquivo);
 
-// var carrosDaFord = carsDeserializado () => carrosDaFord.includes('Chevrolet')
 
-// console.log(carrosDaFord)
+var carrosDaFord = carsDeserializado.filter((carro) => carro.Car.includes('Ford'))
+
+
+console.log(carrosDaFord.length);
+
+
